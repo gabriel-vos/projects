@@ -1,31 +1,138 @@
 @charset "UTF-8";
 
-.header {
-    height: 54px;
+@font-face {
+    font-family: 'Kaspersky Sans Display';
+    src: url('fonts/KasperskySansDisplay-Rg.eot');
+    src: local('Kaspersky Sans Display Regular'), local('KasperskySansDisplay-Rg'),
+        url('fonts/KasperskySansDisplay-Rg.eot?#iefix') format('embedded-opentype'),
+        url('fonts/KasperskySansDisplay-Rg.woff2') format('woff2'),
+        url('fonts/KasperskySansDisplay-Rg.woff') format('woff'),
+        url('fonts/KasperskySansDisplay-Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    background: #fff;
+}
+
+#header {
+    height: 64px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    box-shadow: 0px 2px 10px rgba(92, 133, 150, .35);
+    background: #fff;
+}
+
+#logo {
+    width: 155.39px;
+    height: 64px;
+    border: 0;
+    padding: 0;
+    align-content: center;
+    margin: 2px 2px 0px 120.5px;
+}
+
+#logotype {
+    width: 158px;
+    height: 33px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    align-self: center;
+}
+
+.button {
+    height: 28px;
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    color: #444;
+    font-family: 'Kaspersky Sans Display', "NotoKufiArabic", "NotoSans", "MuseoSans", Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#btnPessoal {
+    width: 47.33;
+}
+
+#btnEmpresas {
+    width: 60.89;
+    margin: 0px 0px 0px 40px;
+}
+
+#btnParceiros {
+    width: 57.05px;
+    margin: 0px 0px 0px 40px;
+}
+
+#btnSobre {
+    width: 113.45;
+    margin: 0px 0px 0px 40px;
+}
+
+#menu {
+    color: #aeaeae;
+    display: flex;
+    flex-direction: row;
+}
+
+#btnGlobe {
+    width: 19px;
+    height: 48px;
+    margin: 8px 16px 0px 0px;
+}
+
+#btnSearch {
+    top: 0;
+    width: 19px;
+    height: 48px;
+    margin: 8px 16px 0px 0px;
+}
+
+#globe, #search {
+    color: #aeaeae;
+}
+
+#secMyAccount {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.header > .buttons {
+#iconControlerMyAccount {
+    margin: 0px 15px 0px 0px;
+    width: 14px;
+    height: 16px;
+}
+
+#flashIconMyAccount {
+    margin: 0px 0px 0px 8px;
+}
+
+#btnMyAccount {
+    height: 100%;
+    width: 226px;
+    background-color: #00A88E;
+    color: white;
+    margin: 0px 120.5px 0px 0px;
+    border: 0;
+    padding: 0;
     display: flex;
-    flex-direction: row;
-    font-size: 14px;
-    color: #444444;
-}
-
-.header > .logotype {
-    width: 156px;
-    height: 30px;
-}
-
-.header > .menu > .search {
-    width: 17px;
-    height: 17px;
-}
-
-.header > .menu > .globe {
-    width: 19px;
-    height: 19px;
+    align-items: center;
+    justify-content: center;
 }
