@@ -1,0 +1,49 @@
+* {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   background-image: linear-gradient(45deg, cyan, yellow);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 97.5vh;
+}
+
+#container {
+   width: 280px;
+   height: 300px;
+   font-size: 20px;
+   border-radius: 30px;
+   padding: 0px 30px 30px 30px;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.664);
+   align-content: center;
+   grid-column-start: auto;
+   display: grid;
+   place-items: center;
+}
+
+.inputs {
+   outline: none;
+   padding: 7px 10px 7px 10px;
+}
+
+#passBtn {
+   margin-top: 4px;
+}
+
+#lgnButton {
+   width: 120px;
+   height: 32px;
+   margin-top: 20px;
+   border: 0;
+   border-radius: 8px;
+   color: white;
+   background-color: #0099ff;
+}
+
+#lgnButton:hover {
+   background-color: #006eff;
+   cursor: pointer;
+}
